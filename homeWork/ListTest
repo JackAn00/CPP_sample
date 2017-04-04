@@ -44,7 +44,7 @@ void deleteNode(string name) {
 }
 
 
-
+//输入的链表数据中的score必须是从小到大
 void insert(Student *stu) {   
 	if (!head) {
 		head = stu;
@@ -118,10 +118,11 @@ int main(int argv ,char *args[]) {
 	cin >> testNum;
 	creat(testNum);
 	showList(head);
-	string name;
-	cout << "pls input the name that you want to delete :";
-	cin >> name;
-	deleteNode(name);
+	//string name;
+	//cout << "pls input the name that you want to delete :";
+	//cin >> name;
+
+	deleteNode("Jack");
 	showList(head);
 
 	Student p;
